@@ -71,13 +71,13 @@
   --card-foreground: oklch(0.25 0.03 150);
   --popover: oklch(0.99 0.008 80);
   --popover-foreground: oklch(0.25 0.03 150);
-  --primary: oklch(0.42 0.07 155);
+  --primary: oklch(0.36 0.05 170);
   --primary-foreground: oklch(0.97 0.015 80);
   --secondary: oklch(0.92 0.03 70);
   --secondary-foreground: oklch(0.25 0.03 150);
   --muted: oklch(0.93 0.02 80);
   --muted-foreground: oklch(0.5 0.03 140);
-  --accent: oklch(0.68 0.12 45);
+  --accent: oklch(0.66 0.09 70);
   --accent-foreground: oklch(0.98 0.01 80);
   --destructive: oklch(0.577 0.245 27.325);
   --destructive-foreground: oklch(0.98 0 0);
@@ -159,6 +159,10 @@
   .choice[data-on="true"] { border-color: var(--color-primary); background: color-mix(in oklch, var(--color-primary) 10%, var(--color-card)); box-shadow: 0 0 0 2px var(--color-primary); }
   .card-soft { padding: 1.4rem 1.6rem; border-radius: var(--radius-xl); background: var(--color-card); border: 1px solid var(--color-border); animation: rise .6s both; }
   .card-accent { padding: 1.8rem; border-radius: var(--radius-2xl); background: linear-gradient(135deg, var(--color-primary), color-mix(in oklch, var(--color-primary) 70%, var(--color-accent))); color: var(--color-primary-foreground); }
+  .label { font-size: .75rem; text-transform: uppercase; letter-spacing: .18em; font-weight: 600; color: var(--color-muted-foreground); margin-bottom: .75rem; }
+  .tag { font-size: .7rem; text-transform: uppercase; letter-spacing: .12em; padding: .3rem .6rem; border-radius: 999px; background: color-mix(in oklch, var(--color-accent) 18%, transparent); color: var(--color-foreground); white-space: nowrap; }
+  .notice { padding: 1rem 1.2rem; border-radius: var(--radius-lg); border-left: 3px solid var(--color-accent); background: color-mix(in oklch, var(--color-accent) 10%, var(--color-card)); font-size: .9rem; }
+  .card-gap { padding: 1.2rem 1.4rem; border-radius: var(--radius-xl); border: 1px dashed var(--color-border); }
   .animate-rise { animation: rise .6s cubic-bezier(.2,.7,.2,1) both; }
 }
 @keyframes rise { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
