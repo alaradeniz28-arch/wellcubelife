@@ -8,3 +8,5 @@
 > Commits you push to the connected branch sync back to Lovable and show up in
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
+
+- Wellcube package logic lives in src/lib/wellcube.ts as a closed catalogue + per-goal protocol slots; UI must never recommend items outside CATALOGUE (client requirement: defensible, real services only).
